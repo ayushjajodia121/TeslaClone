@@ -1,0 +1,128 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Poppins,Arial;
+	font-weight: 400;
+}
+h1,h2,h3,h4,h5,h5 header nav ul a{
+	font-weight: 500;
+}
+a{
+	text-decoration: none;
+}
+ul{
+	list-style-type: none;
+	display: flex;
+	justify-content: center;
+}
+.carName h1{
+	font-size: 2.5rem;
+}
+header nav ul a{
+	 color: #000;
+	 font-size: 90%;
+	 padding: 0 1rem;
+}
+
+header nav  {
+	display: flex;
+	justify-content: space-between;
+	padding: 0 2rem;
+	position: fixed;
+	width: 100vw;
+	height: 60px;  /* to adjust its height*/
+	align-items: center;  /*to adjust items center vertically*/
+}
+section{
+	background: url(images/model-3.jpg) scroll center/cover;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-content: space-between;
+	justify-content: space-between; /* vertically alignment*/
+	padding: 2rem 0;
+}
+section:nth-of-type(2){
+	background-image: url(images/model-y.jpg);
+}
+section:nth-of-type(3){
+	background-image: url(images/model-s.jpg);
+}
+section:nth-of-type(4){
+	background-image: url(images/model-x.jpg);
+}
+section:nth-of-type(5){
+	background-image: url(images/solar-panel.jpg);
+}
+section:nth-of-type(6){
+	background-image: url(images/solar-roof.jpg);
+}
+section:nth-of-type(7){
+	background-image: url(images/teslac.png);
+}
+#lastSec .buttons a{
+	background: #000;
+	color: #fff;
+	padding-left: 4.5rem;
+	width: 14rem;
+	height: 2.5rem;
+	padding-top: 0.55rem;
+}
+
+
+section .carName{
+	padding-top: 4.5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+}
+section .carName p{
+	font-size: 90%;
+}
+section .carName p a{
+	text-decoration: underline;
+	color: #000;
+}
+
+section .buttons{
+	padding-top: 17rem;
+}
+section .buttons a{
+	display: inline-block;
+	padding: 0.5rem 3rem;
+	margin: 0 1rem;
+	border-radius: 25px;
+	background: #000;
+	font-size: 90%;
+	color: #fff;
+	width: 16rem;
+	height: 2.5rem;
+	opacity: 0.55;
+}
+section .buttons a:first-of-type{
+	background: #3a3c41;
+	padding-left: 4.5rem;
+}
+section .buttons a:last-of-type{
+	background: #fff;
+	color: #000;
+	padding-left: 4rem;
+}
+ .arrow{
+	animation: dance 5s infinite ease-out alternate;
+}
+
+section footer ul li a{
+	color: #000;
+	margin: 0.5rem;
+	font-size: 80%;
+
+}
+@keyframes dance{
+	0%{top: 0;}
+	50%{top: 10%;}
+	100%{top: 0;}
+}
